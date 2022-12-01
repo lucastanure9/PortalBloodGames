@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./imagens/LOGO-removebg-preview.png" alt="LOGO" class="logo">
+        <div>
+            <a href="#destaques">Destaques</a>
+            <a href="#trailers">Trailers</a>
+            <a href="#plataformas">Plataformas</a>
+            <a href="#publishers">Publishers</a>
+            <a href="#jogos">Jogos</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+        <div id="caixa">
+        <input type="text" name="" id="barra" placeholder="Pesquise um jogo" onkeyup="pesquisa()">
+        <div id="resultados"> </div>
+    </div>
+    </header>
+
+    <main>
+        <section id="destaques">
+            <h2>Destaques</h2>
+        </section>
+            
+        </section>
+        <section id="trailers">
+                <div class="trailersheader">
+                    <h2>Trailers em Destaque</h2>
+                    <div>
+                        <!-- <div class="w3-dropdown-hover">
+                            <button class="w3-button">Ordem: Popularidade</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                              <a href="#" class="w3-bar-item w3-button">Ordem 1</a>
+                              <a href="#" class="w3-bar-item w3-button">Ordem 2</a>
+                              <a href="#" class="w3-bar-item w3-button">Ordem 3</a>
+                            </div>
+                          </div>
+                    </div> -->
+                </div>
+
+                <div class="cards">
+
+                </div>
+            </div>
+
+        </section>
+        <section id="plataformas">
+            <h2><strong>Principais plataformas</strong></h2>
+            <div class="cards" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                
+            </div>
+        </section>
+
+        <section id="jogos">
+            <h2>Jogos</h2>
+            <div class="cards">
+
+            </div>
+        </section>
+        
+        <section id="publishers">
+            <h2>Publishers</h2>
+            <div class="cards">
+
+            </div>
+        </section>
+
+        <section id="sobre">
+        <div>
+            <div>
+                <h2>Sobre</h2>
+                <div>
+                <p>O portal blood, foi criado com o intuito de apresentar os jogos que vem recebendo grande destaque, recém lançados e jogos que ainda serão lançados e tem um grande "hype" por trás. A blood tenta manter um ambiente simples e didático para todo tipo de usuário que busca uma novidade no mundo dos jogos.</p>
+                </div>
+            </div>
+            <div>
+                <h2>Editorial</h2>
+                <div>
+                    <p class="tentativa"><strong>Matricula: </strong>790619</p>
+                    <p class="tentativa"><strong>Nome Completo: </strong>Lucas Silva Tanure</p>
+                    <p class="tentativa"><strong>Curso: </strong>Sistemas de Informação</p>
+                    <p class="diferente">Redes sociais:</p>
+                    <a href="https://www.instagram.com/lucastanure/"><img src="./imagens/kisspng-scalable-vector-graphics-clip-art-instagram-png-file-5a75716ab5b203.3937501115176461867442.png" alt="Foto Redes" width="50" height="50"></a>
+                    <a href="https://twitter.com/tanure_"><img src="./imagens/5a230168351318.2577878915122435602174.png" alt="Foto Redes" width="50" height="50"></a>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2022 - Lucas Silva Tanure</p>
+        <img src="./imagens/LOGO-removebg-preview.png" alt="LOGO" class="logo">
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var slideIndex = 0;
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "flex";
+        setTimeout(carousel, 5000);
+        }
+    </script>
+</body>
+</html>

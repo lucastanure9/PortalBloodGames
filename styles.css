@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding:16px;
+}
+
+header #resultados
+{
+    position: absolute;
+    background-color: burlywood;
+    color: black;
+    width: 100%;
+}
+
+header #caixa
+{
+    position: relative;
+}
+
+
+header>div>a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid transparent;
+    transition: 200ms;
+    margin:0px 10px;
+}
+
+a:hover{
+    border-bottom: 2px solid blueviolet;
+}
+
+header input
+{
+    font-size: 18px;
+    padding:0px 8px;
+}
+
+.logo {
+    width:50px;
+}
+
+.flexColumnStart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main section h2
+{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;    
+    padding:0px 0px;
+}
+
+#destaques h2 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#destaques
+{
+    background-color: aliceblue;
+    padding:30px 0px;
+}
+
+#destaques > div
+{
+    display:flex;
+    text-align: justify;
+    align-items: flex-start;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+#destaques >div > div
+{
+max-width: 70ch;
+}
+
+#nomejogo
+{
+    padding: 10px 0px;
+    font-size: 25px;
+}
+
+#destaques >div > div > div > p
+{
+padding: 5px 0px;
+}
+
+#destaques >div > div > p
+{
+padding: 5px 0px;
+}
+
+#destaques >div > div > div
+{
+display: flex;
+justify-content:flex-start;
+gap: 10px;
+}
+
+#plataformas > div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#jogos .cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+#jogos .cards .card{
+    background-color: lightcoral;
+    border-radius: 1vw;
+    transition: 100ms;
+}
+
+#jogos .cards .card:hover{
+    transform: scale(105%);
+}
+
+.cards > div > div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+#trailers .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#trailers h2
+{
+    margin-bottom: 20px;
+}
+
+section
+{
+    padding: 30px 150px;
+}
+
+#plataformas p
+{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px 0px;
+}
+
+#plataformas ul
+{
+    padding: 0px 0px 0px 25px;
+}
+
+#publishers
+{
+    
+    background-color: aliceblue;
+}
+
+#publishers p
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#publishers ul
+{
+    padding: 0px 0px 0px 25px;
+}
+
+#publishers > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}  
+
+#sobre 
+{
+    
+}
+
+#sobre div      
+{
+    display: block;
+    justify-content: space-between;
+}
+
+#sobre > div > div
+{
+    max-width: 70ch;
+    display: block; 
+    text-align: justify;
+    padding: 10px;
+}     
+
+#sobre > div
+{
+    display: flex;
+    
+}
+
+.tentativa
+{
+    margin-bottom: 10px;
+}
+
+#sobre img
+
+{
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.diferente 
+{
+    font-size: 25px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding:16px;
+    align-items: center;
+}
+
+.maisdetalhes
+{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 576px){
+    section{
+        padding: 0px !important;
+    }
+
+    header input, header > div{
+        display: table-column;
+    }
+    #destaques iframe{
+        width: 300px;
+        height: 200px;
+    }
+    #destaques .mySlides{
+        flex-direction: column;
+    }
+
+    #destaques{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #plataformas{
+        flex-direction: column;
+    }
+
+    #plataformas {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    
+    #publishers .cards{
+        flex-direction: column;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+    #sobre{
+        flex-direction: column;
+    }
+    .plmds{
+        flex-direction: column;
+    }
+}
